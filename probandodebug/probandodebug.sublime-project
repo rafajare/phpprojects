@@ -1,0 +1,24 @@
+{
+	"folders":
+	[
+		{
+		
+			"path": "/C/Users/Usuario/Desktop/Desarrolo_Servidor/Sublime/php"
+			
+		}
+	],
+	"settings":
+	{
+		"xdebug":
+		{
+			"close_on_stop":true,
+			"path_mapping":
+			{
+				"/var/www/html/php/ejercicios/probandodebug/": "C:/Users/Usuario/Desktop/Desarrolo_Servidor/Sublime/php/ejercicios/probandodebug/"
+				},
+				"super_globals": true,
+				"url": "http//192.168.56.1/php/ejercicios/probandodebug/"
+		}
+	}
+
+}
