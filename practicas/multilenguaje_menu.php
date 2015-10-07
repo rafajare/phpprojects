@@ -77,7 +77,6 @@ $menu=array(
                   </ul>
         </li>
         <li><a href="#"><?php echo $menu['instrucciones'][$lang]?></a></li>
-        <li><a href="#"><?php echo $menu['acercaDe'][$lang]?></a></li>
       </ul>
     </div>
   </div>
