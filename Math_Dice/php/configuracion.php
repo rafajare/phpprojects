@@ -38,29 +38,18 @@ $menu=array(
   )
 ?>
 
-<html>
-<head>
-  <title>Bootstrap Case</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-</head>
-<body>
-
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <!--Llamamos al array menu, y buscará la clave titulo. Y llamamos al array lenguaje-->
       <a class="navbar-brand" href="#"><?php echo $menu['titulo'][$lang]?></a>
     </div>
-    <div>
-      <ul class="nav navbar-nav">
+  <div>
+     <ul class="nav navbar-nav">
         <!--Llamamos al array menu, y buscará la clave portada(que pondrá 'Inicio' en la barra de menu). Y llamamos al array lenguaje-->
         <li class="active"><a href="#"><?php echo $menu['portada'][$lang]?></a></li>
         <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo $menu['tiposJuego'][$lang]?><span class="caret"></span></a>
-          <ul class="dropdown-menu">
+           <ul class="dropdown-menu">
                     <?php 
                     foreach( $menu['tiposJuego'] as $clave => $valor ){
                       // Almacenamos las claves del contenido del array en $clave y hacemos un if
@@ -69,19 +58,28 @@ $menu=array(
                           // Aqui el valor seria el array submenu que ha encontrado antes ?..
                           // Imprimira los valores del array.
                           //Vuelca el valor de submenu en una sentencia foreach. De esta forma hará submenu 1, submenu2, submenu3
-                        foreach ($valor as $games){ ?>
+                      foreach ($valor as $games){ ?>
                             <li><a href="#"><?php echo $games[$lang] ?></a></li>
                     <?php } 
                          }
                     } ?>
-                  </ul>
-        </li>
+            </ul>
+                            </li>
         <li><a href="#"><?php echo $menu['instrucciones'][$lang]?></a></li>
-      </ul>
+          </ul>
     </div>
   </div>
 </nav>
-
-
-</body>
-</html>
+  <!-- Este div mostrará las imágenes de los dados ordenados-->
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-2"><img src="../imagenes/dado1.png"></div>
+        <div class="col-sm-2"><img src="../imagenes/dado2.png"></div>
+        <div class="col-sm-2"><img src="../imagenes/dado3.png"></div>
+        <div class="col-sm-2"><img src="../imagenes/dado4.png"></div>
+        <div class="col-sm-2"><img src="../imagenes/dado5.png"></div>
+        <div class="col-sm-2"><img src="../imagenes/dado6.png"></div>
+     </div>
+    </div>
+    </div>
+    <!-- FIN DEL Este div mostrará las imágenes de los dados ordenados-->
