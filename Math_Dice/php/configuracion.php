@@ -81,5 +81,4 @@ $menu=array(
         <div class="col-sm-2"><img src="../imagenes/dado6.png"></div>
      </div>
     </div>
-    </div>
     <!-- FIN DEL Este div mostrará las imágenes de los dados ordenados-->
