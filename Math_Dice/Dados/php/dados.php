@@ -15,7 +15,8 @@
               
         <?php
            
-           //function random(){
+           
+           function random(){
            $option=rand(1,6);
             
          
@@ -27,13 +28,14 @@
                  case 5: echo"<div class='col-sm-2'><img src='../imagenes/dado5.png'></div>";break;
                  case 6: echo"<div class='col-sm-2'><img src='../imagenes/dado6.png'></div>";break;
              }
-           //}
-           //return random();
+             return $option;
+           }
+          random(); 
            
           
           
            echo"<div class='col-sm-2'>";
-           //function dodecaedro(){
+           function dodecaedro(){
              
              $valor=rand(1,12);
              switch($valor){
@@ -51,8 +53,9 @@
                  case 12: echo"<div class='col-sm-2'><img src='../imagenes/dode_12.PNG'></div>";break;
                  
              }
-          // }
-           //return dodecaedro();
+             return $valor;
+           }
+           dodecaedro();
            echo"</div>";
            
            
