@@ -30,7 +30,7 @@
              }
              return $option;
            }
-          random(); 
+            random(); 
            
           
           
@@ -58,25 +58,30 @@
            dodecaedro();
            echo"</div>";
            
-           
+           function dadoAleatorio(){
            $valor2=rand(1,3);
            switch($valor2){
                 case 1: echo"<div class='col-sm-2'><img src='../imagenes/dado1.png'></div>";break;
                 case 2: echo"<div class='col-sm-2'><img src='../imagenes/dado2.png'></div>";break;
                 case 3: echo"<div class='col-sm-2'><img src='../imagenes/dado3.png'></div>";break;
                
+            }
+            return $valor3;
            }
            
+           dadoAleatorio();
            
-        
+            function dadoAleatorio2(){
            $valor3=rand(1,3);
            switch($valor3){
                 case 1: echo"<div class='col-sm-2'><img src='../imagenes/dado1.png'></div>";break;
                 case 2: echo"<div class='col-sm-2'><img src='../imagenes/dado2.png'></div>";break;
                 case 3: echo"<div class='col-sm-2'><img src='../imagenes/dado3.png'></div>";break;
                
-           }
-          
+                }
+                return $valor3;
+            } 
+            dadoAleatorio2();
            ?>
            
            

@@ -70,15 +70,4 @@ $menu=array(
     </div>
   </div>
 </nav>
-  <!-- Este div mostrará las imágenes de los dados ordenados-->
-  <div class="container">
-      <div class="row">
-        <div class="col-sm-2"><img src="../imagenes/dado1.png"></div>
-        <div class="col-sm-2"><img src="../imagenes/dado2.png"></div>
-        <div class="col-sm-2"><img src="../imagenes/dado3.png"></div>
-        <div class="col-sm-2"><img src="../imagenes/dado4.png"></div>
-        <div class="col-sm-2"><img src="../imagenes/dado5.png"></div>
-        <div class="col-sm-2"><img src="../imagenes/dado6.png"></div>
-     </div>
-    </div>
-    <!-- FIN DEL Este div mostrará las imágenes de los dados ordenados-->
+  
