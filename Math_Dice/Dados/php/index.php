@@ -14,7 +14,7 @@
 
   <?php
 
-  include "configuracion.php";
+  include "configuracion2.php";
   include "dados.php";
 
   

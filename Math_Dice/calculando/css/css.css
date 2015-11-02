@@ -3,3 +3,16 @@ img{
     width:100px;
 }
 
+form{
+border-radius: 45px 45px 200px 45px;
+-moz-border-radius: 45px 45px 200px 45px;
+-webkit-border-radius: 45px 45px 200px 45px;
+border: 15px dashed #000000;
+boder:solid;
+padding:1em;
+overflow:hidden;
+width:400px;
+height:250px;
+background-color:#1e46e6;
+}
+

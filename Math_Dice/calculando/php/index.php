@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="../css/css.css" type="text/css" />
  </head>
  <body>
- 
+  
 
   <?php
 
   include "configuracion.php";
   include "dados.php";
+  
 
   
 ?>
