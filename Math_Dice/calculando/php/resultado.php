@@ -19,14 +19,13 @@ if(isset($_GET["oculto1"])){
         }
        
     }else{
-        echo"El numero no es correcto";
+        echo"Hay un fallo de escritura. Revise los numeros y marque la operacion deseada.";
     }
     
-}
-    
-    else{
+}/*else{
         echo"No hay operador definido";
     }
+    */
     
     
 ?>

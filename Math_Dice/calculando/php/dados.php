@@ -40,13 +40,12 @@
                                <br>
                                <input type="hidden" name="oculto1" value="<?php print $valor_1;?>"/>
                                <input type="hidden" name="oculto2" value="<?php print $valor_2;?>"/>
+                               <br>
+                               <input type="submit" name="calcular" value ="Calcular">
                                
                                
                         </div>
-                                    <div class ="col-sm-2">
-                                       <br><br>
-                                       <input type="submit" name="calcular" value ="Calcular">
-                                    </div> 
+                                     
                           </form>
               </div>
            </div>
