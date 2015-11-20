@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+ <?php
+
+  include "configuracion.php";
+  include "dados.php";
+ 
+?>
+
 <html>
   <head>
     <title>Bootstrap Case</title>
@@ -12,14 +19,7 @@
  <body>
   
 
-  <?php
-
-  include "configuracion.php";
-  include "dados.php";
-  
-
-  
-?>
+ 
  </body>
 </html>
 
