@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-
 session_start();
-
 ?>
 <html>
   <head>
@@ -57,7 +55,6 @@ session_start();
    
                               
                              <table align="left" title="Contenido" border="0" width="400px">
-
                                 <tr>
                                     <center><input type="text" name="Nombre" placeholder="Nombre" /></center>
                                 </tr>
@@ -106,8 +103,8 @@ session_start();
                                       <div class="form-group">
                                         <div class="col-lg-offset-2 col-lg-6">
                                           <a href="Instrucciones.php"><input class="rojo" type="button" value="Instrucciones" /></a><br><br>
-                                          <input class="verde" type="Submit" name="Junior" value="Junior" formaction="index_junior.php" >
-                                          <input class="verde" type="Submit" name="Senior" value="Senior" formaction="index_senior.php"/>
+                                          <input class="verde" type="Submit" name="Junior" value="Junior" formaction="cabecera_junior.php" >
+                                          <input class="verde" type="Submit" name="Senior" value="Senior" formaction="cabecera_senior.php"/>
                                         </div>
                                       </div>
                                      </center> 

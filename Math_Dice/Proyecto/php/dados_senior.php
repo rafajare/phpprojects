@@ -1,6 +1,7 @@
 
     <?php
     session_start();
+    
     if(strlen($_GET['Nombre'])==0){
      header('Location:.php');
    }

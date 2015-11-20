@@ -1,5 +1,5 @@
 
-<?php
+  <?php
     
     if(isset($_GET["oculto1"])){
     $operacion1=$_GET["operacion1"];
@@ -128,7 +128,7 @@
                  }
              }
           }
-           echo'Valor esperado:'; echo $dodecaedro;
+           echo'<h1>Valor esperado:'; echo $dodecaedro+'</h1>';
            echo"<br>";
            echo"<br>";
            print($oculto1.$operacion1.$oculto2.$operacion2.$oculto3.$operacion3.$oculto4.$operacion4.$oculto5." = ".$resultado);
@@ -137,11 +137,12 @@
          
          if($resultado==$dodecaedro){
              echo"<br>";
-             echo"<br>";
-             echo"<br>";
+             
              echo'<h1>CORRECTO! HAS GANADO 1 PUNTO</h1>';
+              echo"<img src='../imagenes/correcto.gif'>";
          }else{
-                    echo'<h1> INCORRECTO</h1>';
+                    echo"<br>";
+                    echo"<img src='../imagenes/error.gif'>";
          }
 
 
