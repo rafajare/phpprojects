@@ -3,8 +3,8 @@
   <?php
     session_start();
     
+    
     if(isset($_GET["oculto1"])){
-        
     $operacion1=$_GET["operacion1"];
     $operacion2=$_GET["operacion2"];
     $operacion3=$_GET["operacion3"];
@@ -111,7 +111,7 @@
          if($resultado==$dodecaedro){
              echo"<br>";
              echo'<h1>CORRECTO! HAS GANADO 1 PUNTO</h1>';
-             echo"<img src='../imagenes/correcto.gif'>";
+             echo"<img src='../imagenes/correcto2.gif'>";
              echo"<br>";
              echo "<h1>Vuelva atras para seguir jugando</h1>";
              
@@ -123,7 +123,16 @@
              echo "<h1>Vuelva atras para seguir jugando</h1>";
             }
     
-   
+       //No funciona el sistema de puntos 
+            //if(isset($_GET["dodecaedro"])){
+             //$valor_dode=$_GET["dodecaedro"];
+           //}
+               //if($resultado==$valor_dode){
+                  //$S_SESSION["Jugador"]->setPuntos(1);    
+                  //}
+            //echo "<br>";
+            //echo" puntos: "; echo setPuntos();
+            
 ?>
      
 <html>

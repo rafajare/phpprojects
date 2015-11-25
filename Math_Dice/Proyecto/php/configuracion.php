@@ -1,6 +1,9 @@
 <?php
-if($_SESSION['idioma']=="english"){
-  $lang="en";
+    if(isset($_GET["lenguaje"])){
+    $lenguaje=$_GET["lenguaje"];
+    }
+    if($lenguaje=="english"){
+      $lang="en";
     }else{
       $lang="sp";
     }

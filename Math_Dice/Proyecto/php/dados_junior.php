@@ -9,8 +9,9 @@
     if(strlen($_GET['Apellido'])==0){
      header('Location:index.php');
    }
-   $_SESSION['idioma']=$_POST['lenguaje'];
    
+   
+    
     echo "<h1>";
     echo $_GET['Nombre']; 
     echo " ";
@@ -33,18 +34,6 @@
    $valor_5=aleatorio(1,3);
    $valor_dode=aleatorio(1,12);
           
-          //NO FUNCIONA (SISTEMA DE PUNTOS)
-          //$resultado=$_GET["resultado"];
-           //$contador=0;
-           //if(isset($_GET["resultado"])){
-            //if($_SESSION["dodecaedro"]==$resultado){
-             //$contador++;
-            //}
-           //}
-            //echo "<br>";
-            //echo "<h1>";
-            //echo $contador; echo" puntos";
-            //echo "</h1>";
            ?>
            <form name="calcular" action="resultado_junior.php">
             
