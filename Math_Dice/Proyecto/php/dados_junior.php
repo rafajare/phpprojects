@@ -10,12 +10,11 @@
    }
    
     
-    echo $_GET['Nombre']=$nomJugador; 
+    echo $_GET['Nombre']; 
     echo " ";
-    echo $_GET['Apellido']=$apellidoJugador;
+    echo $_GET['Apellido'];
     
-    //$jugador1=new Jugador($nomJugador,$apellidoJugador,0);
-    // $jugador1.getPuntos();
+
     
            
     function aleatorio($minimo,$maximo){
