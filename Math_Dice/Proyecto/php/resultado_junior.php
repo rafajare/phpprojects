@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
   <?php
+    session_start();
     
     if(isset($_GET["oculto1"])){
         
@@ -109,17 +110,25 @@
          
          if($resultado==$dodecaedro){
              echo"<br>";
-           
              echo'<h1>CORRECTO! HAS GANADO 1 PUNTO</h1>';
              echo"<img src='../imagenes/correcto.gif'>";
+             echo"<br>";
+             echo "<h1>Vuelva atras para seguir jugando</h1>";
              
              
          }else{
-                    echo"<br>";
-                     echo"<img src='../imagenes/error.gif'>";
+             echo"<br>";
+             echo"<img src='../imagenes/error.gif'>";
+             echo"<br>";
+             echo "<h1>Vuelva atras para seguir jugando</h1>";
             }
-         
-        
-            
+    
+   
 ?>
      
+<html>
+    <form>
+         <input type="hidden" name="resultado" value="<?php $resultado ;?>"/>
+    </form>
+</html>
+    

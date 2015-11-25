@@ -1,6 +1,7 @@
 
    <?php
     session_start();
+    
     if(strlen($_GET['Nombre'])==0){
      header('Location:index.php');
    }
@@ -8,14 +9,16 @@
     if(strlen($_GET['Apellido'])==0){
      header('Location:index.php');
    }
+   $_SESSION['idioma']=$_POST['lenguaje'];
    
-    
+    echo "<h1>";
     echo $_GET['Nombre']; 
     echo " ";
     echo $_GET['Apellido'];
+    echo "</h1>";
     
 
-    
+
            
     function aleatorio($minimo,$maximo){
               
@@ -30,20 +33,38 @@
    $valor_5=aleatorio(1,3);
    $valor_dode=aleatorio(1,12);
           
-          
-          
+          //NO FUNCIONA (SISTEMA DE PUNTOS)
+          //$resultado=$_GET["resultado"];
+           //$contador=0;
+           //if(isset($_GET["resultado"])){
+            //if($_SESSION["dodecaedro"]==$resultado){
+             //$contador++;
+            //}
+           //}
+            //echo "<br>";
+            //echo "<h1>";
+            //echo $contador; echo" puntos";
+            //echo "</h1>";
            ?>
            <form name="calcular" action="resultado_junior.php">
             
            <div class="container">
-              <div class="row">
-                  
+            <div class="row">
                   <br>
                       <div class="col-sm-2">
                           Dado 1 <br>
                           <img src="../imagenes/dado<?php echo $valor_1;?>.png" height='200' widht='200'>
                           <br><br>
-                          <input type="text" name="dado1" placeholder="Introduce dado1" style="width:100px;"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                         
+                            <select name="dado1" style="width:100px;">
+                                  <option value=""></option>   
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                          </select>&nbsp;&nbsp;&nbsp;&nbsp;
                                <input type="radio" name="operacion1" value="+"/><font color="black">+</font>
                                <input type="radio" name="operacion1" value="-"/><font color="black">-</font>
                       </div>
@@ -52,7 +73,15 @@
                           Dado 2 <br>
                           <img src="../imagenes/dado<?php  echo $valor_2;?>.png" height='200' widht='200'>
                           <br><br>
-                          <input type="text" name="dado2" placeholder="Introduce dado3 "style="width:100px;"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select name="dado2" style="width:100px;">  
+                                  <option value=""></option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                          </select>&nbsp;&nbsp;&nbsp;&nbsp;
                                <input type="radio" name="operacion2" value="+"/><font color="black">+</font>
                                <input type="radio" name="operacion2" value="-"/><font color="black">-</font>
                       </div>
@@ -61,7 +90,15 @@
                           Dado 3 <br>
                           <img src="../imagenes/dado<?php  echo $valor_3;?>.png" height='200' widht='200'>
                           <br><br>
-                           <input type="text" name="dado3" placeholder="Introduce dado3" style="width:100px;"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                             <select name="dado3" style="width:100px;">    
+                                  <option value=""></option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                  <option value="6">6</option>
+                          </select>&nbsp;&nbsp;&nbsp;&nbsp;
                                <input type="radio" name="operacion3" value="+"/><font color="black">+</font>
                                <input type="radio" name="operacion3" value="-"/><font color="black">-</font>
                       </div>
@@ -70,7 +107,12 @@
                           Dado 4 <br>
                           <img src="../imagenes/dado<?php  echo $valor_4;?>.png" height='200' widht='200'>
                           <br><br>
-                          <input type="text" name="dado4" placeholder="Introduce dado4" style="width:100px;"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select name="dado4" style="width:100px;"> 
+                                  <option value=""></option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                          </select>&nbsp;&nbsp;&nbsp;&nbsp;
                                <input type="radio" name="operacion4" value="+"/><font color="black">+</font>
                                <input type="radio" name="operacion4" value="-"/><font color="black">-</font>
                       </div>
@@ -79,7 +121,12 @@
                           Dado 5 <br>
                           <img src="../imagenes/dado<?php  echo $valor_5;?>.png" height='200' widht='200'>
                           <br><br>
-                          <input type="text" name="dado5" placeholder="Introduce dado5" style="width:100px;"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select name="dado5" style="width:100px;"> 
+                                 <option value=""></option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                          </select>&nbsp;&nbsp;&nbsp;&nbsp;
                       </div>
                       
                         <div class="col-sm-2">
@@ -99,15 +146,12 @@
                      <br>
                       <input class ="reset" type="reset" name="Submit" value="Restablecer operaciones">
                       <input class="calcular" type="submit" name="calcular" value ="Calcular"> 
-                     <p><h2>Si es imposible llegar al valor del dodecaedro pulse F5</h2></p>
+                     <p><h2>Si es imposible llegar al valor del dodecaedro pulse F5</h2></p><br>
+                     <p><h2>En caso de que solo necesite un dado: Utilice ese dado y pulse una casilla '+'</h2></p>
                       
                      
                      </div>
                                
              </form>           
-                          
-                              
 
-                              
-                          
-      
+

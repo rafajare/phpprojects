@@ -1,5 +1,9 @@
 <?php
-$lang="sp";
+if($_SESSION['idioma']=="english"){
+  $lang="en";
+    }else{
+      $lang="sp";
+    }
 $menu=array(
     "titulo"=>array(
       "sp"=>"<img src='../imagenes/math.jpg' width='50x'>",

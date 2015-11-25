@@ -106,6 +106,9 @@ session_start();
                                           <input class="verde" type="Submit" name="Junior" value="Junior" formaction="cabecera_junior.php" >
                                           <input class="verde" type="Submit" name="Senior" value="Senior" formaction="cabecera_senior.php"/>
                                         </div>
+                                        <br>
+                                        <input type="radio" name="lenguaje" value="spanish" checked="checked">Spanish
+                                        <input type="radio" name="lenguaje" value="english">English
                                       </div>
                                      </center> 
                                     </form>

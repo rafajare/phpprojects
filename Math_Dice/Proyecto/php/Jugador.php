@@ -1,7 +1,6 @@
 <?php
 class Jugador{
     
-
     
     function Jugador($nombre, $apellido, $puntos){
         
@@ -35,7 +34,7 @@ class Jugador{
         $this->$apellido = $apellido;
     }
     
-    function setEdad($edad){
+    function setPuntos($puntos){
         $this->$puntos = $puntos;
     }
     
