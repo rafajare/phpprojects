@@ -9,15 +9,21 @@
     if(strlen($_GET['Apellido'])==0){
      header('Location:index.php');
    }
-   
-    $_SESSION['idioma']=$_POST['lenguaje'];
+    include("Jugador.php");
+
   
-    echo "<h1>";
-    echo $_GET['Nombre']; 
-    echo " ";
-    echo $_GET['Apellido'];
-    echo "</h1>";
+    $_GET['Nombre']; 
+    $_GET['Apellido'];
+    $nombre=$_GET['Nombre'];
+    $apellido=$_GET['Apellido'];
     
+    $jugador =new Jugador($nombre,$apellido,0);
+    echo $jugador->getNombre();
+    echo" ";
+    echo $jugador->getApellido();
+    echo"<br>";
+    echo"Puntos: ";
+    echo $jugador->getPuntos();
     
            
     function aleatorio($minimo,$maximo){
@@ -148,6 +154,8 @@
                                <input type="hidden" name="oculto4" value="<?php print $valor_4;?>"/>
                                <input type="hidden" name="oculto5" value="<?php print $valor_5;?>"/>
                                <input type="hidden" name="dodecaedro" value="<?php print $valor_dode;?>"/>
+                               <input type="hidden" name="nombre" value="<?php print $nombre;?>"/>
+                               <input type="hidden" name="apellido" value="<?php print $apellido;?>"/>
                                <br><br><br><br>
                      </div>
                      <br>

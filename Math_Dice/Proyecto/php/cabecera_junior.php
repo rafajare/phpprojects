@@ -4,8 +4,6 @@
 <?php
  include "configuracion.php";
  include "dados_junior.php";
-
-
 ?>
 
 <html>

@@ -34,10 +34,11 @@ $menu=array(
            )
            
         )
-    
-    
-    )
-    
+    ),
+    "perfil"=>array(
+      "sp"=>"Perfil",
+      "en"=>"Profile",
+      )
   )
 ?>
 
@@ -70,6 +71,7 @@ $menu=array(
                             </li>
                             
         <li><a href="Instrucciones.php"><?php echo $menu['instrucciones'][$lang]?></a></li>
+        <li><a href="examen.php"><?php echo $menu['perfil'][$lang]?></a></li>
         
           </ul>
     </div>

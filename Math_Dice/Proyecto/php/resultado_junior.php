@@ -128,10 +128,9 @@
              //$valor_dode=$_GET["dodecaedro"];
            //}
                //if($resultado==$valor_dode){
-                  //$S_SESSION["Jugador"]->setPuntos(1);    
-                  //}
-            //echo "<br>";
-            //echo" puntos: "; echo setPuntos();
+                 // $_SESSION["Jugador"]->setPuntos(1);    
+                 // }
+
             
 ?>
      
