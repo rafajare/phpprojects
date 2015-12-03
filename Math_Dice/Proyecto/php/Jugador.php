@@ -5,11 +5,8 @@ class Jugador{
     private $apellido;
     private $puntos;
     
-    function Jugador($nombre, $apellido, $puntos){
+    function Jugador(){
         
-        $this->nombre = $nombre;
-        $this->apellido = $apellido;
-        $this->puntos = $puntos;
         
     }
     
@@ -33,7 +30,7 @@ class Jugador{
         $this->nombre = $nombre;
     }
     
-    function setApellidos($apellido){
+    function setApellido($apellido){
         $this->apellido = $apellido;
     }
     

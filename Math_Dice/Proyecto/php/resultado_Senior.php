@@ -141,6 +141,10 @@
              echo"<img src='../imagenes/correcto2.gif'>";
              echo"<br>";
              echo "<h1>Vuelva atras para seguir jugando</h1>";
+             $puntos=$jugador1->getPuntos();
+             $puntos++;
+             $jugador1->setPuntos($puntos);
+             
          }else{
              echo"<br>";
              echo"<img src='../imagenes/error.gif'>";
@@ -149,15 +153,6 @@
          }
 
 
-       //No funciona el sistema de puntos 
-            //if(isset($_GET["dodecaedro"])){
-             //$valor_dode=$_GET["dodecaedro"];
-           //}
-               //if($resultado==$valor_dode){
-                  //$_SESSION["Jugador"]->setPuntos(1);    
-                  //}
-            //echo "<br>";
-            //echo" puntos: "; echo setPuntos();
              
 ?>
 

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-
 <?php
+include('Jugador.php');
 session_start();
 ?>
+
+
+
 <html>
   <head>
     <title>Bienvenido</title>
@@ -15,7 +18,8 @@ session_start();
  </head>
  <body>
                             
-                             <form class="form-horizontal" role="form" name="datos">
+                             <form class="form-horizontal" role="form" name="datos" method="get">
+                               <input type="hidden" name="jugador">
                                     <center> 
                                       <div class="form-group">
                                         <div class="col-lg-10">
@@ -46,6 +50,6 @@ session_start();
                                         <input type="radio" name="lenguaje" value="english">English
                                       </div>
                                      </center> 
-                                    </form>
+                                     </form>
                     </body>
                     </html>

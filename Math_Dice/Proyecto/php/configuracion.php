@@ -1,4 +1,5 @@
 <?php
+  session_start();
     if(isset($_GET["lenguaje"])){
     $lenguaje=$_GET["lenguaje"];
     }
@@ -38,8 +39,17 @@ $menu=array(
     "perfil"=>array(
       "sp"=>"Perfil",
       "en"=>"Profile",
-      )
-  )
+      ),
+      
+      "cerrar sesion"=>array(
+        "sp"=>"Cerrar sesion ",
+        "en"=>"Disconect",
+        )
+  );
+  
+  $nombre=$jugador1->getNombre();
+  $apellido=$jugador1->getApellido();
+  $puntos=$jugador1->getPuntos();
 ?>
 
 <nav class="navbar navbar-inverse">
@@ -71,7 +81,10 @@ $menu=array(
                             </li>
                             
         <li><a href="Instrucciones.php"><?php echo $menu['instrucciones'][$lang]?></a></li>
-        <li><a href="examen.php"><?php echo $menu['perfil'][$lang]?></a></li>
+        <li><a href="examen.php?nombre=<?=$nombre?>&apellido=<?=$apellido?>"><?php echo $menu['perfil'][$lang]?></a></li>
+        <!--session_destroy()--><li><a href="index.php"><?php echo $menu['cerrar sesion'][$lang]?></a></li>
+        
+        
         
           </ul>
     </div>

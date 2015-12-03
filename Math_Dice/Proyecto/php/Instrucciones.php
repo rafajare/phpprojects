@@ -1,5 +1,33 @@
 <?php
-include "configuracion.php";
+include('Jugador.php');
+ session_start();
+if(isset($_GET['jugador'])){
+        
+        if (!isset($_SESSION['jugador'])) {
+          $jugador1 = new Jugador();
+          $jugador1->setNombre($_GET['Nombre']);
+          $jugador1->setApellido($_GET['Apellido']);
+          $jugador1->setPuntos(0);
+          $_SESSION['jugador'] = $jugador1;
+        }
+    }
+     if (isset($_SESSION['jugador'])) {
+        $jugador1 = $_SESSION['jugador'];
+        
+    }
+    
+        if (isset($_SESSION['jugador'])) {
+        $jugador1 = $_SESSION['jugador'];
+        
+    }
+    if($jugador1->getNombre()==null || $jugador1->getApellido()==null){
+    header("Location: index.php");
+};
+    
+
+    
+ include "configuracion.php";
+
 ?>
 <html>
   <head>
